@@ -2,7 +2,7 @@ from utils.utils import runCmdAndGetOutput
 
 
 def get_all_cmd():
-    fp = open('cmd')
+    fp = open('supportcmd')
     cmds = []
     for line in fp.readlines():
         cmds.append(line.split()[0])
@@ -38,11 +38,20 @@ def get_cmds(subcmd):
         cmds.append(line.split()[0])
     return cmds
 
-def get_cmd_config():
+def get_cmd_configs():
     result = {}
     for subcmd in get_cmds('domain'):
-        result[subcmd] = get_cmd_description_and_params(subcmd)
+        # print subcmd
+        # print get_cmd_description_and_params(subcmd)
+        description, params = get_cmd_description_and_params(subcmd)
+        result[subcmd] = {}
+        result[subcmd]['description'] = description
+        result[subcmd]['params'] = params
+    return result
 
-# get_all_cmd()
+# get_cmds('domain')
 # for subcmd in get_cmds('domain'):
 #     print get_cmd_description_and_params(subcmd)
+
+# cmd_config = get_cmd_configs()
+# print cmd_config

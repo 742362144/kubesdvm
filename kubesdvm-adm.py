@@ -3,7 +3,7 @@ import os
 import traceback
 from sys import exit
 
-from analyser.analyse import get_cmd_config
+from analyser.analyse import get_cmd_configs
 from operation import *
 from utils import logger
 
@@ -40,7 +40,25 @@ parser_query_vm.set_defaults(func=query)
 
 
 # --------------------- auto generate------------------------------
-# cmd_config = get_cmd_config()
+cmd_configs = get_cmd_configs()
+for cmd in cmd_configs.keys:
+    # -------------------- add QueryVM cmd ----------------------------------
+    description = cmd_configs[cmd]
+    parser_cmd = subparsers.add_parser(cmd, help=description)
+
+    params = cmd_configs[cmd]['params']
+    for param in params.keys():
+        p_name = params[param]['p_name']
+        p_type = params[param]['p_type']
+        # arguments are all optional, if not set, exeception will be raise, when virsh cmd is executing,
+        parser_cmd.add_argument("--"+p_name, metavar="["+p_name+"]", type=p_type,
+                                     help="")
+    def cmd_func():
+        pass
+    # set default func
+    parser_cmd.set_defaults(func=cmd_func)
+
+
 
 try:
     args = parser.parse_args()
@@ -48,3 +66,6 @@ try:
 except TypeError:
     # print "argument number not enough"
     logger.debug(traceback.format_exc())
+
+
+

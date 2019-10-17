@@ -1,0 +1,22 @@
+create                         create a domain from an XML file
+start                          start a (previously defined) inactive domain
+shutdown                       gracefully shutdown a domain
+destroy                        destroy (stop) a domain
+undefine                       undefine a domain
+reboot                         reboot a domain
+reset                          reset a domain
+resume                         resume a domain
+suspend                        suspend a domain
+save                           save a domain state to a file
+restore                        restore a domain from a saved state in a file
+migrate                        migrate domain to another host
+change-media                   Change media of CD or floppy drive
+attach-device                  attach device from an XML file
+detach-device                  detach device from an XML file
+setvcpus                       change number of virtual CPUs
+setmem                         change memory allocation
+setmaxmem                      change maximum memory limit
+blockresize                    Resize block device of domain.
+blkdeviotune                   Set or query a block device I/O tuning parameters.
+domiftune                      get/set parameters of a virtual interface
+update-device                  update device from an XML file

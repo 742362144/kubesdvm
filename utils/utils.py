@@ -7,7 +7,6 @@ Copyright (2019, ) Institute of Software, Chinese Academy of Sciences
 import traceback
 from json import loads
 
-from libvirt_util import get_graphics, is_snapshot_exists
 from exception import ExecuteException
 
 '''
