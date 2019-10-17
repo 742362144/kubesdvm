@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4c339a3-81c0-40cb-8430-795b706ba5c8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kubesdvm-adm.py" beforeDir="false" afterPath="$PROJECT_DIR$/kubesdvm-adm.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,8 +36,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kubesdvm-adm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+            <state relative-caret-position="203">
+              <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -66,8 +66,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/operation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="313" column="31" selection-start-line="313" selection-start-column="31" selection-end-line="313" selection-end-column="31" />
+            <state relative-caret-position="168">
+              <caret line="315" column="47" selection-start-line="315" selection-start-column="41" selection-end-line="315" selection-end-column="47" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -113,6 +113,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>arra</find>
+      <find>domain</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\coder\PycharmProjects\kubesdvm</dir>
@@ -130,8 +131,8 @@
         <option value="$PROJECT_DIR$/analyser/cmd" />
         <option value="$PROJECT_DIR$/utils/utils.py" />
         <option value="$PROJECT_DIR$/analyser/analyse.py" />
-        <option value="$PROJECT_DIR$/kubesdvm-adm.py" />
         <option value="$PROJECT_DIR$/operation.py" />
+        <option value="$PROJECT_DIR$/kubesdvm-adm.py" />
       </list>
     </option>
   </component>
@@ -287,12 +288,12 @@
       <updated>1571192296803</updated>
       <workItem from="1571192299128" duration="11393000" />
       <workItem from="1571214909665" duration="1358000" />
-      <workItem from="1571276010826" duration="3944000" />
+      <workItem from="1571276010826" duration="4205000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16695000" />
+    <option name="totallyTimeSpent" value="16956000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1432" y="-8" width="1382" height="744" extended-state="6" />
@@ -384,8 +385,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/operation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="313" column="31" selection-start-line="313" selection-start-column="31" selection-end-line="313" selection-end-column="31" />
+        <state relative-caret-position="168">
+          <caret line="315" column="47" selection-start-line="315" selection-start-column="41" selection-end-line="315" selection-end-column="47" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -394,8 +395,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kubesdvm-adm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+        <state relative-caret-position="203">
+          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>

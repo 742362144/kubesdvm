@@ -14,7 +14,7 @@ logger = logger.set_logger(os.path.basename(__file__), LOG)
 
 
 def query(args):
-    queryVM(args.domain)
+    queryVM(args.name)
 
 
 # --------------------------- cmd line parser ---------------------------------------
