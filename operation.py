@@ -308,7 +308,8 @@ def queryVM(domain):
         exit(1)
 
 def updateDomain(jsondict):
-    with open('/root/arraylist.cfg' % os.path.dirname(__file__)) as fr:
+    # with open('%s/arraylist.cfg' % os.path.dirname(__file__)) as fr:
+    with open('/root/arraylist.cfg') as fr:
         for line in fr:
             l = str.strip(line)
             alist = l.split('-')
