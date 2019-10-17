@@ -40,4 +40,11 @@ parser_query_vm.set_defaults(func=query)
 
 
 # --------------------- auto generate------------------------------
-cmd_config = get_cmd_config()
+# cmd_config = get_cmd_config()
+
+try:
+    args = parser.parse_args()
+    args.func(args)
+except TypeError:
+    # print "argument number not enough"
+    logger.debug(traceback.format_exc())
