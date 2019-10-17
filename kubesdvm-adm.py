@@ -24,14 +24,14 @@ subparsers = parser.add_subparsers(help="sub-command help")
 
 # -------------------- add QueryVM cmd ----------------------------------
 parser_query_vm = subparsers.add_parser("queryVM", help="queryVM help")
-parser_query_vm.add_argument("--domain", metavar="[DOMAIN]", type=str,
+parser_query_vm.add_argument("--name", metavar="[NAME]", type=str,
                                 help="query vm info")
 
 # set default func
 parser_query_vm.set_defaults(func=query)
 
 
-# query1 = parser.parse_args(["queryVM", "--domain", "vm003"])
+# query1 = parser.parse_args(["queryVM", "--name", "vm003"])
 #
 # try:
 #     query1.func(query1)
