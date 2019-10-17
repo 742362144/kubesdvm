@@ -3,7 +3,7 @@ import os
 import traceback
 from sys import exit
 
-from analyser.analyse import get_cmds, get_cmd_config
+from analyser.analyse import get_cmd_config
 from operation import *
 from utils import logger
 
