@@ -1,0 +1,103 @@
+attach-device                  attach device from an XML file
+attach-disk                    attach disk device
+attach-interface               attach network interface
+autostart                      autostart a domain
+blkdeviotune                   Set or query a block device I/O tuning parameters.
+blkiotune                      Get or set blkio parameters
+blockcommit                    Start a block commit operation.
+blockcopy                      Start a block copy operation.
+blockjob                       Manage active block operations
+blockpull                      Populate a disk from its backing image.
+blockresize                    Resize block device of domain.
+change-media                   Change media of CD or floppy drive
+console                        connect to the guest console
+cpu-stats                      show domain cpu statistics
+create                         create a domain from an XML file
+define                         define (but don't start) a domain from an XML file
+desc                           show or set domain's description or title
+destroy                        destroy (stop) a domain
+detach-device                  detach device from an XML file
+detach-device-alias            detach device from an alias
+detach-disk                    detach disk device
+detach-interface               detach network interface
+domdisplay                     domain display connection URI
+domfsfreeze                    Freeze domain's mounted filesystems.
+domfsthaw                      Thaw domain's mounted filesystems.
+domfsinfo                      Get information of domain's mounted filesystems.
+domfstrim                      Invoke fstrim on domain's mounted filesystems.
+domhostname                    print the domain's hostname
+domid                          convert a domain name or UUID to domain id
+domif-setlink                  set link state of a virtual interface
+domiftune                      get/set parameters of a virtual interface
+domjobabort                    abort active domain job
+domjobinfo                     domain job information
+domname                        convert a domain id or UUID to domain name
+domrename                      rename a domain
+dompmsuspend                   suspend a domain gracefully using power management functions
+dompmwakeup                    wakeup a domain from pmsuspended state
+domuuid                        convert a domain name or id to domain UUID
+domxml-from-native             Convert native config to domain XML
+domxml-to-native               Convert domain XML to native config
+dump                           dump the core of a domain to a file for analysis
+dumpxml                        domain information in XML
+edit                           edit XML configuration for a domain
+event                          Domain Events
+inject-nmi                     Inject NMI to the guest
+iothreadinfo                   view domain IOThreads
+iothreadpin                    control domain IOThread affinity
+iothreadadd                    add an IOThread to the guest domain
+iothreadset                    modifies an existing IOThread of the guest domain
+iothreaddel                    delete an IOThread from the guest domain
+send-key                       Send keycodes to the guest
+send-process-signal            Send signals to processes
+lxc-enter-namespace            LXC Guest Enter Namespace
+managedsave                    managed save of a domain state
+managedsave-remove             Remove managed save of a domain
+managedsave-edit               edit XML for a domain's managed save state file
+managedsave-dumpxml            Domain information of managed save state file in XML
+managedsave-define             redefine the XML for a domain's managed save state file
+memtune                        Get or set memory parameters
+perf                           Get or set perf event
+metadata                       show or set domain's custom XML metadata
+migrate                        migrate domain to another host
+migrate-setmaxdowntime         set maximum tolerable downtime
+migrate-getmaxdowntime         get maximum tolerable downtime
+migrate-compcache              get/set compression cache size
+migrate-setspeed               Set the maximum migration bandwidth
+migrate-getspeed               Get the maximum migration bandwidth
+migrate-postcopy               Switch running migration from pre-copy to post-copy
+numatune                       Get or set numa parameters
+qemu-attach                    QEMU Attach
+qemu-monitor-command           QEMU Monitor Command
+qemu-monitor-event             QEMU Monitor Events
+qemu-agent-command             QEMU Guest Agent Command
+reboot                         reboot a domain
+reset                          reset a domain
+restore                        restore a domain from a saved state in a file
+resume                         resume a domain
+save                           save a domain state to a file
+save-image-define              redefine the XML for a domain's saved state file
+save-image-dumpxml             saved state domain information in XML
+save-image-edit                edit XML for a domain's saved state file
+schedinfo                      show/set scheduler parameters
+screenshot                     take a screenshot of a current domain console and store it into a file
+set-lifecycle-action           change lifecycle actions
+set-user-password              set the user password inside the domain
+setmaxmem                      change maximum memory limit
+setmem                         change memory allocation
+setvcpus                       change number of virtual CPUs
+shutdown                       gracefully shutdown a domain
+start                          start a (previously defined) inactive domain
+suspend                        suspend a domain
+ttyconsole                     tty console
+undefine                       undefine a domain
+update-device                  update device from an XML file
+vcpucount                      domain vcpu counts
+vcpuinfo                       detailed domain vcpu information
+vcpupin                        control or query domain vcpu affinity
+emulatorpin                    control or query domain emulator affinity
+vncdisplay                     vnc display
+guestvcpus                     query or modify state of vcpu in the guest (via agent)
+setvcpu                        attach/detach vcpu or groups of threads
+domblkthreshold                set the threshold for block-threshold event for a given block device or it's backing chain element
+guestinfo                      query information about the guest (via agent)
