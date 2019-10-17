@@ -12,7 +12,7 @@ from utils.libvirt_util import get_xml, vm_state
 from utils.utils import *
 from utils import logger
 
-LOG = "/var/log/kubesds.log"
+LOG = "/var/log/kubesdvm.log"
 
 logger = logger.set_logger(os.path.basename(__file__), LOG)
 
