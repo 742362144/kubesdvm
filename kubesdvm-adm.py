@@ -38,6 +38,8 @@ parser_query_vm.set_defaults(func=query)
 # except TypeError:
 #     logger.debug(traceback.format_exc())
 
+def test(args):
+    print args
 
 # --------------------- auto generate------------------------------
 cmd_configs = get_cmd_configs()
@@ -62,7 +64,6 @@ for cmd in cmd_configs.keys():
     def cmd_func(args):
         createInstance("operation", cmd_map[cmd], cmd='virsh '+cmd, op=cmd_map[cmd], params=args)
         createInstance.invoke()
-    # set default func
     parser_cmd.set_defaults(func=cmd_func)
 
 
@@ -74,5 +75,11 @@ except TypeError:
     # print "argument number not enough"
     logger.debug(traceback.format_exc())
 
-
+# try:
+#     args = parser.parse_args(
+#         ["queryVM"])
+#     args.func(args)
+# except TypeError:
+#     traceback.print_exc()
+#     logger.debug(traceback.format_exc())
 

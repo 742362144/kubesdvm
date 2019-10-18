@@ -40,7 +40,7 @@ def get_cmds(subcmd):
 
 def get_cmd_configs():
     result = {}
-    for subcmd in get_cmds('domain'):
+    for subcmd in get_all_cmd():
         # print subcmd
         # print get_cmd_description_and_params(subcmd)
         description, params = get_cmd_description_and_params(subcmd)
