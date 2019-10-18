@@ -42,7 +42,7 @@ parser_query_vm.set_defaults(func=query)
 # --------------------- auto generate------------------------------
 cmd_configs = get_cmd_configs()
 cmd_map = get_cmd_map()
-for cmd in cmd_configs.keys:
+for cmd in cmd_configs.keys():
     # -------------------- add QueryVM cmd ----------------------------------
     description = cmd_configs[cmd]
     parser_cmd = subparsers.add_parser(cmd, help=description)
