@@ -49,9 +49,27 @@ def get_cmd_configs():
         result[subcmd]['params'] = params
     return result
 
+
+def get_cmd_map():
+    fp = open('cmdmap')
+    cmd_map = {}
+    for line in fp.readlines():
+        if line.find('virsh') >= 0:
+            line = line.replace('virsh', '')
+            op = line.split('=')[0].strip()
+            string = list(op)
+            string[0] = string[0].upper()
+            op = ''.join(string)
+
+            cmd = line.split('=')[1].strip()
+            cmd_map[cmd] = op
+    return cmd_map
+
 # get_cmds('domain')
 # for subcmd in get_cmds('domain'):
 #     print get_cmd_description_and_params(subcmd)
 
 # cmd_config = get_cmd_configs()
 # print cmd_config
+
+print get_cmd_map()

@@ -26,7 +26,6 @@ class Executor(object):
 
         self.params = params
         self.cmd = cmd
-        self.params = params
         self.with_result = with_result
 
     def get_cmd(self):
@@ -46,9 +45,10 @@ class Executor(object):
 
 
 class Operation:
-    def __init__(self, op, params):
+    def __init__(self, cmd, op, params):
         self.op = op
         self.params = params
+        self.cmd = cmd
 
     def prepare(self):
         raise ExecuteException('not impl prepare interface', 'not impl prepare interface')

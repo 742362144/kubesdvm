@@ -3,7 +3,7 @@ import os
 import traceback
 from sys import exit
 
-from analyser.analyse import get_cmd_configs
+from analyser.analyse import get_cmd_configs, get_cmd_map
 from operation import *
 from utils import logger
 
@@ -41,6 +41,7 @@ parser_query_vm.set_defaults(func=query)
 
 # --------------------- auto generate------------------------------
 cmd_configs = get_cmd_configs()
+cmd_map = get_cmd_map()
 for cmd in cmd_configs.keys:
     # -------------------- add QueryVM cmd ----------------------------------
     description = cmd_configs[cmd]
@@ -53,8 +54,9 @@ for cmd in cmd_configs.keys:
         # arguments are all optional, if not set, exeception will be raise, when virsh cmd is executing,
         parser_cmd.add_argument("--"+p_name, metavar="["+p_name+"]", type=p_type,
                                      help="")
-    def cmd_func():
-        pass
+
+    def cmd_func(args):
+        createInstance("operation", cmd_map[cmd], cmd='virsh '+cmd, op=cmd_map[cmd], params=args)
     # set default func
     parser_cmd.set_defaults(func=cmd_func)
 
