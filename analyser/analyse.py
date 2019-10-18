@@ -2,7 +2,7 @@ from utils.utils import runCmdAndGetOutput
 
 
 def get_all_cmd():
-    fp = open('supportcmd')
+    fp = open('/root/supportcmd')
     cmds = []
     for line in fp.readlines():
         cmds.append(line.split()[0])
@@ -51,7 +51,7 @@ def get_cmd_configs():
 
 
 def get_cmd_map():
-    fp = open('cmdmap')
+    fp = open('/root/cmdmap')
     cmd_map = {}
     for line in fp.readlines():
         if line.find('virsh') >= 0:
