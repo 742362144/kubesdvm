@@ -49,7 +49,7 @@ for cmd in cmd_configs.keys():
 
     params = cmd_configs[cmd]['params']
     for param in params.keys():
-        p_name = params[param]['p_name']
+        p_name = param
         p_type = params[param]['p_type']
         # arguments are all optional, if not set, exeception will be raise, when virsh cmd is executing,
         parser_cmd.add_argument("--"+p_name, metavar="["+p_name+"]", type=p_type,
@@ -57,6 +57,7 @@ for cmd in cmd_configs.keys():
 
     def cmd_func(args):
         createInstance("operation", cmd_map[cmd], cmd='virsh '+cmd, op=cmd_map[cmd], params=args)
+        createInstance.invoke()
     # set default func
     parser_cmd.set_defaults(func=cmd_func)
 

@@ -69,7 +69,7 @@ def get_cmd_map():
 # for subcmd in get_cmds('domain'):
 #     print get_cmd_description_and_params(subcmd)
 
-# cmd_config = get_cmd_configs()
-# print cmd_config
+cmd_config = get_cmd_configs()
+print cmd_config
 
-print get_cmd_map()
+# print get_cmd_map()
